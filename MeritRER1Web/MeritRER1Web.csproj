@@ -82,6 +82,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\MeritRER1Web.dll" />
+    <Content Include="bin\MeritRER1Web.pdb" />
+    <Content Include="bin\Microsoft.IdentityModel.dll" />
+    <Content Include="bin\Microsoft.IdentityModel.Extensions.dll" />
+    <Content Include="bin\Microsoft.SharePoint.Client.dll" />
+    <Content Include="bin\Microsoft.SharePoint.Client.Runtime.dll" />
     <Content Include="Global.asax" />
     <Content Include="Pages\Default.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
