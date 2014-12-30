@@ -65,10 +65,7 @@ namespace MeritRER1Web.Services
                     {
                         if (properties.EventType == SPRemoteEventType.ItemAdded)
                         {
-                            List lstLog = clientContext.Web.Lists.GetByTitle("EventTrackLog");
-                            clientContext.Load(lstLog);
-                            clientContext.ExecuteQuery();
-
+                           
 
                             if (
                       properties.ItemEventProperties.ListTitle.Equals("Merittest1", StringComparison.OrdinalIgnoreCase))
