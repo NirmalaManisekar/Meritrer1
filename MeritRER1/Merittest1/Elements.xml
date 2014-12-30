@@ -5,7 +5,13 @@
       <Name>Merittest1ItemAdding</Name>
       <Type>ItemAdding</Type>
       <SequenceNumber>10000</SequenceNumber>
-      <Url>~remoteAppUrl/Services/Merittest1.svc</Url>
+      <Url>https://meritrer1.azurewebsites.net/Services/Merittest1.svc</Url>
+    </Receiver>
+    <Receiver>
+      <Name>Merittest1ItemAdded</Name>
+      <Type>ItemAdded</Type>
+      <SequenceNumber>10000</SequenceNumber>
+      <Url>https://meritrer1.azurewebsites.net/Services/Merittest1.svc</Url>
     </Receiver>
   </Receivers>
 </Elements>
