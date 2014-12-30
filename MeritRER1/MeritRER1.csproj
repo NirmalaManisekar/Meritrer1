@@ -22,6 +22,7 @@
     <WorkflowPartId>{f37f4741-9508-4c12-b79d-0865a063ab53}</WorkflowPartId>
     <CspkgPartId>{06c72fb3-6c1c-4c95-acca-ce1628715a4f}</CspkgPartId>
     <SqlPackagePartId>{3be864b7-ab0e-43ed-851b-ae5968924de1}</SqlPackagePartId>
+    <ActivePublishProfile>meritrer1</ActivePublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

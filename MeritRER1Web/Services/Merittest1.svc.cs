@@ -24,18 +24,19 @@ namespace MeritRER1Web.Services
                 {
                     clientContext.Load(clientContext.Web);
                     clientContext.ExecuteQuery();
-                   if (
-                     properties.ItemEventProperties.ListTitle.Equals("Merittest1", StringComparison.OrdinalIgnoreCase)){
-                    List merit1 = clientContext.Web.Lists.GetByTitle("Merittest1");
-                    ListItem item = merit1.GetItemById(
-                     properties.ItemEventProperties.ListItemId);
-                    clientContext.Load(item);
-                    clientContext.ExecuteQuery();
+                    //if (
+                    //  properties.ItemEventProperties.ListTitle.Equals("Merittest1", StringComparison.OrdinalIgnoreCase)){
+                    // List merit1 = clientContext.Web.Lists.GetByTitle("Merittest1");
+                    // ListItem item = merit1.GetItemById(
+                    //  properties.ItemEventProperties.ListItemId);
+                    // clientContext.Load(item);
+                    // clientContext.ExecuteQuery();
 
-                    item["Title"] += "\nUpdated by RER " +
-                       System.DateTime.Now.ToLongTimeString();
-                    item.Update();
-                    clientContext.ExecuteQuery();}
+                    // item["Title"] += "\nUpdated by RER " +
+                    //    System.DateTime.Now.ToLongTimeString();
+                    // item.Update();
+                    // clientContext.ExecuteQuery();
+                    //}
                 }
             }
 
@@ -54,8 +55,42 @@ namespace MeritRER1Web.Services
                 {
                     clientContext.Load(clientContext.Web);
                     clientContext.ExecuteQuery();
+
+                    SPRemoteEventResult result = new SPRemoteEventResult();
+
+                    Uri myurl = new Uri(properties.ItemEventProperties.WebUrl);
+
+
+                    if (clientContext != null)
+                    {
+                        if (properties.EventType == SPRemoteEventType.ItemAdded)
+                        {
+                            List lstLog = clientContext.Web.Lists.GetByTitle("EventTrackLog");
+                            clientContext.Load(lstLog);
+                            clientContext.ExecuteQuery();
+
+
+                            if (
+                      properties.ItemEventProperties.ListTitle.Equals("Merittest1", StringComparison.OrdinalIgnoreCase))
+                            {
+                                List merit1 = clientContext.Web.Lists.GetByTitle("Merittest1");
+                                ListItem item = merit1.GetItemById(
+                                 properties.ItemEventProperties.ListItemId);
+                                clientContext.Load(item);
+                                clientContext.ExecuteQuery();
+
+                                item["Title"] += "\nUpdated by RER " +
+                                   System.DateTime.Now.ToLongTimeString();
+                                item.Update();
+                                clientContext.ExecuteQuery();
+                            }
+
+
+                        }
+                    }
                 }
             }
         }
     }
+
 }

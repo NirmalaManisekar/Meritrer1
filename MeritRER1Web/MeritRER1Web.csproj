@@ -90,6 +90,7 @@
     <Content Include="bin\Microsoft.SharePoint.Client.Runtime.dll" />
     <Content Include="Global.asax" />
     <Content Include="Pages\Default.aspx" />
+    <None Include="Properties\PublishProfiles\meritrer1.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
