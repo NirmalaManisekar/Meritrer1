@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1a6e4cf0-b3b0-42d4-91ca-1bf6e285dc80" solutionId="1a6e4cf0-b3b0-42d4-91ca-1bf6e285dc80" resetWebServer="false" sharePointProductVersion="15.0" name="MeritRER1" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="29eb41c5-f7b3-4117-a54f-9b4073b44c78" />
+  </features>
+</package>

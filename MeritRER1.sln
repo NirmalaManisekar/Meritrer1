@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeritRER1", "MeritRER1\MeritRER1.csproj", "{EEBD838C-2537-44BC-8F88-427AAEA8651C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeritRER1Web", "MeritRER1Web\MeritRER1Web.csproj", "{48971DFF-B9C5-48EF-84E5-2D34C05ED932}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEBD838C-2537-44BC-8F88-427AAEA8651C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBD838C-2537-44BC-8F88-427AAEA8651C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEBD838C-2537-44BC-8F88-427AAEA8651C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EEBD838C-2537-44BC-8F88-427AAEA8651C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEBD838C-2537-44BC-8F88-427AAEA8651C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEBD838C-2537-44BC-8F88-427AAEA8651C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{48971DFF-B9C5-48EF-84E5-2D34C05ED932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48971DFF-B9C5-48EF-84E5-2D34C05ED932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48971DFF-B9C5-48EF-84E5-2D34C05ED932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48971DFF-B9C5-48EF-84E5-2D34C05ED932}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
